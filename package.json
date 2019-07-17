@@ -3,8 +3,8 @@
   "description": "frontend for okama",
   "version": "0.0.1",
   "scripts": {
-    "ng": "node index.js",
-    "start": "ng serve",
+    "ng": "ng",
+    "start": "node index.js",
     "build": "ng build",
     "heroku-postbuild": "echo This runs afterwards.",
     "test": "ng test",
