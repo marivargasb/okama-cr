@@ -25,6 +25,8 @@ import { MapComponentComponent } from './Companent/map-component/map-component.c
 import { CultureComponent } from './Pages/culture/culture.component';
 import { HomeComponent } from './Pages/home/home.component';
 import { BannerHomeComponent } from './Companent/banner-home/banner-home.component';
+import {ServiceWorkerModule} from '@angular/service-worker';
+import { environment } from 'src/environments/environment.prod';
 
 @NgModule({
   declarations: [
@@ -52,6 +54,7 @@ import { BannerHomeComponent } from './Companent/banner-home/banner-home.compone
     BrowserAnimationsModule,
     ModalModule.forRoot(),
     CarouselModule.forRoot(),
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production}),
     HttpClientModule,
     TranslateModule.forRoot({
       loader: {
