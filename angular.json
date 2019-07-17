@@ -44,7 +44,8 @@
               "src/assets/css/style.css"
             ],
             "scripts": [
-              "src/assets/js/google-map.js"
+              "src/assets/js/google-map.js",
+              
             ]
           },
           "configurations": {
