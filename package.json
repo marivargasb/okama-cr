@@ -1,10 +1,10 @@
 {
   "name": "frontend",
-  "version": "0.0.0",
+  "version": "0.1",
   "scripts": {
     "ng": "ng serve",
     "start": "ng serve",
-    "build": "ng build  --prod --build-optimizer=false",
+    "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
