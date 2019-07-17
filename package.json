@@ -6,7 +6,7 @@
     "ng": "node index.js",
     "start": "ng serve",
     "build": "ng build",
-    "heroku-postbuild": "ng build --prod",
+    "heroku-postbuild": "echo This runs afterwards.",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
