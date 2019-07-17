@@ -10,7 +10,6 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e ",
-    "postinstall": "ng build",
     "stack": "heroku-18",
     "heroku-prebuild": "echo This runs before Heroku installs your dependencies."
   },
