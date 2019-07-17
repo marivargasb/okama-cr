@@ -1,10 +1,10 @@
 {
   "name": "frontend",
   "description": "frontend for okama",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "npm serve",
+    "start": "node index.js",
     "build": "ng build",
     "heroku-postbuild": "echo This runs afterwards.",
     "test": "ng test",
