@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -25,7 +25,7 @@ import { MapComponentComponent } from './Companent/map-component/map-component.c
 import { CultureComponent } from './Pages/culture/culture.component';
 import { HomeComponent } from './Pages/home/home.component';
 import { BannerHomeComponent } from './Companent/banner-home/banner-home.component';
-import {ServiceWorkerModule} from '@angular/service-worker';
+import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from 'src/environments/environment.prod';
 
 @NgModule({
@@ -54,7 +54,6 @@ import { environment } from 'src/environments/environment.prod';
     BrowserAnimationsModule,
     ModalModule.forRoot(),
     CarouselModule.forRoot(),
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production}),
     HttpClientModule,
     TranslateModule.forRoot({
       loader: {
@@ -65,9 +64,11 @@ import { environment } from 'src/environments/environment.prod';
         },
         deps: [HttpClient]
       }
-    })
+    }),
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [ NO_ERRORS_SCHEMA ]
 })
 export class AppModule { }
