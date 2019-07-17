@@ -4,12 +4,13 @@
   "version": "0.0.1",
   "scripts": {
     "ng": "ng",
-    "start": "node index.js",
-    "build": "ng build",
+    "start": "ng serve mdb-angular-free",
+    "build": "ng build mdb-angular-free",
     "heroku-postbuild": "echo This runs afterwards.",
-    "test": "ng test",
+    "test": "ng test mdb-angular-free",
     "lint": "ng lint",
-    "e2e": "ng e2e",
+    "e2e": "ng e2e mdb-angular-free",
+    "postinstall": "ng build mdb-angular-free --aot --prod",
     "stack": "heroku-18",
     "heroku-prebuild": "echo This runs before Heroku installs your dependencies."
   },
